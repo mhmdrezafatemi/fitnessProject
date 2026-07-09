@@ -34,7 +34,7 @@ export default function WhyChooseUs() {
         </p>
         <div className="choose-us-section">
           {cards.map((card) => (
-            <div className="card-box choose-us-section-card">
+            <div key={card.id} className="card-box choose-us-section-card">
               <img src={card.image} />
               <h3>{card.title}</h3>
               <p>{card.paragraph}</p>

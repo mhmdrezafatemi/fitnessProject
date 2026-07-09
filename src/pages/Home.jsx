@@ -10,6 +10,7 @@ export default function Home() {
       <main>
       <WhyChooseUs />
       <Program />
+      <Result/>
       </main>
     </>
   );
