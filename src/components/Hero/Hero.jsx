@@ -1,15 +1,8 @@
-import heropic from "./assets/heropic.jpg";
-import dropdown from "./assets/dropdown.svg";
+import heropic from "../../assets/heropic.jpg";
+import dropdown from "../../assets/dropdown.svg";
 import { useState } from "react";
+import "./Hero.css";
 export default function Hero() {
-  return (
-    <div className="hero-img">
-      <Navigation />
-    </div>
-  );
-}
-
-function Navigation() {
   const [isopen, setState] = useState(false);
   function setDropdown() {
     setState(!isopen);
@@ -20,7 +13,7 @@ function Navigation() {
     { id: 3, title: "more", href: "/" },
   ];
   return (
-    <>
+    <div className="hero-img">
       <div className="nav-box">
         <div className="dropdown">
           <button onClick={setDropdown} className="buttonstyle-reset">
@@ -49,6 +42,6 @@ function Navigation() {
           <button>Explore Program</button>
         </div>
       </div>
-    </>
+    </div>
   );
 }

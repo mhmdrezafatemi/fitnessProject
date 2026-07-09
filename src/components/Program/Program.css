@@ -1,0 +1,71 @@
+.program-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 80px 0;
+}
+.program-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  gap: 1rem;
+}
+.program-title h2 {
+  color: darkgrey;
+}
+.program-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 50px 2rem;
+}
+.program-cards h3 {
+  font-weight: 600;
+  margin: 0;
+}
+.program-cards p {
+  margin: 0rem 2rem;
+}
+.program-cards a {
+  margin-top: auto;
+  padding: 2rem;
+}
+.program-cards img {
+  transition: transform 0.4s ease-out;
+  will-change: transform;
+}
+.program-cards img:hover {
+  transform: scale(1.03);
+}
+.program-link {
+  display: flex;
+  gap: 0.5rem;
+}
+.program-link span {
+  transition: transform 0.2s ease-out;
+}
+.program-link:hover span {
+  transform: translateX(3px);
+}
+.program-link:hover {
+  color: rgba(255, 255, 255, 0.718);
+  cursor: pointer;
+}
+.image-wrapper {
+  max-width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.results {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.686),
+    rgba(0, 0, 0, 0.979)
+  );
+}
