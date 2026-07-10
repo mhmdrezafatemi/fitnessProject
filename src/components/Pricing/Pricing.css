@@ -1,0 +1,76 @@
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  padding: 8rem;
+  gap: 3rem;
+}
+.plan-section {
+  display: flex;
+  gap: 2rem;
+}
+.popular {
+  display: flex;
+  align-items: center;
+  color: #d4af37;
+}
+.popular strong {
+  margin-top: 15px;
+}
+.plan-card {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  gap: 1rem;
+  padding: 20px;
+  width: 100%;
+  background: linear-gradient(rgb(96, 94, 94), rgba(8, 8, 8, 0.979));
+  color: var(--dark-p);
+  box-shadow: 0 20px 20px 2px rgba(102, 101, 101, 0.716);
+}
+.plan-card h5 {
+  font-size: 2rem;
+}
+.plan-card p {
+  color: var(--dark-p);
+  border-bottom: 2px solid var(--dark-p);
+}
+.popularplan {
+  transform: scaleX(1.1) scaleY(1.1);
+  border: 4px solid #d4af37;
+}
+.plan-card-list {
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.5rem 0;
+}
+.plan-button {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.plan-button-container{
+
+}
+.plan-button button {
+  padding: 0.3rem;
+  width: 5rem;
+  border: none;
+  border-right: 1px solid black;
+}
+.active {
+  transform: translateY(1px);
+  box-shadow:inset -40px -10px 20px 5px rgba(255, 255, 255, 0.614);
+}
+@media (max-width: 700px) {
+  .plan-card {
+    flex-direction: row;
+  }
+  .plan-section {
+    flex-direction: column;
+  }
+}
