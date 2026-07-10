@@ -1,0 +1,40 @@
+.quote-icon {
+  color: rgb(200, 15, 15);
+  align-self: flex-end;
+}
+.star-icon {
+  display: flex;
+}
+.testimonial-container {
+  padding: 5rem;
+  box-sizing: border-box;
+  height: 100vh;
+  background: linear-gradient(black, rgba(120, 119, 119, 0.968));
+}
+.testimonial-title {
+  padding: 2rem 0;
+}
+.testimonial-title p {
+  color: var(--dark-p);
+}
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  gap: 2rem;
+  padding: 4rem;
+  width: 45%;
+}
+.testimonial-card p {
+  color: var(--dark-p);
+}
+.testimonial-card h5 {
+  font-size: 1.5rem;
+}
+.testimonial-card span {
+  font-size: 0.8rem;
+}
+.testimonial-arrow {
+  display: flex;
+  gap: 25rem;
+}

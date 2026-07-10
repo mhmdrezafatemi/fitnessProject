@@ -5,8 +5,8 @@
   align-items: center;
   gap: 3rem;
   background-color: white;
-  padding: 2rem;
-  box-shadow: 1px -40px 30px 40px rgba(251, 249, 249, 0.706);
+  padding: 5rem 2rem;
+  box-shadow:var(--main-shadow);
 }
 .choose-us strong {
   text-decoration: underline;
@@ -24,8 +24,8 @@
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   width: 100%;
-  padding: 0 4rem;
-  gap: 4rem;
+  padding: 0 10rem;
+  gap: 3rem;
 }
 .choose-us-section h3 {
   color: black;

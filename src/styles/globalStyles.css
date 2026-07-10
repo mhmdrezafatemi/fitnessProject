@@ -10,6 +10,9 @@
   --text-secondary: #373535;
 
   --border: #2a2a2a;
+
+  --main-shadow: 0 -20px 100px -20px white;
+  --dark-p: rgb(162, 159, 159);
 }
 * {
   font-family: "poppins";
@@ -19,9 +22,9 @@ body {
   background: var(--bg);
   color: var(--text);
 }
-button{
-    background-color: black;
-    color: white;
+button {
+  background-color: black;
+  color: white;
 }
 h1 {
   font-size: clamp(2.8rem, 3vw, 5rem);
@@ -44,7 +47,7 @@ h3 {
 
 p {
   color: var(--text-secondary);
-    padding: 1rem 0;
+  padding: 1rem 0;
   line-height: 1.7;
 }
 
@@ -66,4 +69,3 @@ p {
 .buttonstyle-reset {
   all: unset;
 }
-

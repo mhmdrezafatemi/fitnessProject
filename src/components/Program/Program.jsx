@@ -26,7 +26,7 @@ const programs = [
 ];
 export default function Program() {
   return (
-    <div className="program-section results">
+    <div className="program-section background-gradient">
       <div className="program-title">
         <strong> Our Program</strong>
         <h2>Transform Your Body With Expert Coaching </h2>
@@ -38,7 +38,7 @@ export default function Program() {
       <div className="program-cards">
         {programs.map((program) => (
           <div className="card-box">
-            <div className="image-wrapper">
+            <div key={program.id} className="image-wrapper">
               <img src={program.image} />
             </div>
             <h3>{program.title}</h3>
