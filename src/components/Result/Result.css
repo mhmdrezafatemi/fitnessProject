@@ -21,7 +21,8 @@
 }
 .result-container {
   border-bottom: 1px solid rgba(117, 115, 115, 0.477);
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   padding: 2rem;
   gap: 3rem;
 }
@@ -39,8 +40,14 @@
 }
 
 @media (max-width: 700px) {
-    .result-container{
-        flex-direction: column;
-    }
+  .result-section-container {
+    font-size: 1.1rem;
+    gap: 1rem;
+  }
+  .result-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .result-text {
+    width: 100px;
+  }
 }
-

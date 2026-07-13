@@ -36,5 +36,14 @@
 }
 .testimonial-arrow {
   display: flex;
-  gap: 25rem;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .testimonial-card {
+    width: 100%;
+    padding: 2rem;
+  }
+  .testimonial-container {
+    padding: 1.5rem 1rem;
+  }
 }

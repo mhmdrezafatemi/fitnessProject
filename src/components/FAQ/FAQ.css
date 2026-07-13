@@ -66,3 +66,18 @@
   justify-self: end;
   flex-grow: 5;
 }
+@media (max-width: 600px) {
+  .faq-container {
+    padding: 5rem 2rem;
+  }
+  .faq-box {
+    margin: 0;
+  }
+  .each-faq {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .answer-self {
+    padding: 0.5rem;
+  }
+}

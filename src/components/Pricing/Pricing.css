@@ -53,24 +53,34 @@
   align-items: center;
   border-bottom: 1px solid black;
 }
-.plan-button-container{
-
+.plan-button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
 }
 .plan-button button {
-  padding: 0.3rem;
-  width: 5rem;
+  padding: 0.7rem;
+  width: 100px;
   border: none;
-  border-right: 1px solid black;
 }
 .active {
-  transform: translateY(1px);
-  box-shadow:inset -40px -10px 20px 5px rgba(255, 255, 255, 0.614);
+  box-shadow: inset -40px -10px 20px 5px rgba(255, 255, 255, 0.614);
+}
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 @media (max-width: 700px) {
-  .plan-card {
-    flex-direction: row;
-  }
   .plan-section {
     flex-direction: column;
+  }
+  .pricing-container {
+    padding: 4rem 2rem;
+  }
+  .plan-button {
+    flex-direction: column;
+  }
+  .popularplan {
+    transform: scaleX(1.05);
   }
 }

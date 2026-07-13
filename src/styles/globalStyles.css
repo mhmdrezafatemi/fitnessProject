@@ -51,21 +51,23 @@ p {
   line-height: 1.7;
 }
 
-.card-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgba(128, 128, 128, 0.218);
-  gap: 2rem;
-  flex: 1;
-}
 .layout {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+}
+.container {
   width: 100%;
 }
 .buttonstyle-reset {
   all: unset;
+}
+@media (max-width: 768px) {
+  .layout {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+  .card-box {
+  }
 }

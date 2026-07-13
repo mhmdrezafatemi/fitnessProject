@@ -1,5 +1,7 @@
 .footer-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
   background-color: white;
   padding: 4rem 4%;
 }
@@ -45,6 +47,19 @@
 }
 .mylink {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-col1 {
+    grid-column: 1/-1;
+    padding: 0 1rem;
+  }
+  .footer-links {
+    padding: 0;
+  }
 }

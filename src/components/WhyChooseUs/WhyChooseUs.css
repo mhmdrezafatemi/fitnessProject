@@ -5,44 +5,57 @@
   align-items: center;
   gap: 3rem;
   background-color: white;
-  padding: 5rem 2rem;
-  box-shadow:var(--main-shadow);
+  padding: 5rem 1rem;
+  box-shadow: var(--main-shadow);
 }
 .choose-us strong {
   text-decoration: underline;
   color: black;
 }
-.choose-us p {
-  text-align: start;
-}
 .choose-us h2 {
   color: black;
   font-weight: 600;
+  text-align: center;
 }
 .choose-us-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  width: 100%;
+  display: flex;
+  align-items: center;
   padding: 0 10rem;
   gap: 3rem;
 }
 .choose-us-section h3 {
   color: black;
   font-size: 2;
+  width: 100%;
+  text-align: center;
 }
 .choose-us-section-card {
   padding: 1rem;
 }
 .choose-us-section-card img {
-  width: 5rem;
+  width: 20%;
 }
-
+.chooseus-card-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(128, 128, 128, 0.218);
+  gap: 2rem;
+  flex: 1;
+}
 @media (max-width: 700px) {
   .choose-us-section {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    padding: 0;
   }
-  .card-box {
+  .chooseus-card-box {
     width: 70%;
+  }
+  .choose-us {
+    padding: 1rem;
+  }
+  .choose-us-section-card {
+    font-size: 1.2rem;
   }
 }
