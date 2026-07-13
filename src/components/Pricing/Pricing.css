@@ -23,7 +23,7 @@
   flex-direction: column;
   background-color: black;
   gap: 1rem;
-  padding: 20px;
+  padding: 2rem;
   width: 100%;
   background: linear-gradient(rgb(96, 94, 94), rgba(8, 8, 8, 0.979));
   color: var(--dark-p);
@@ -37,8 +37,8 @@
   border-bottom: 2px solid var(--dark-p);
 }
 .popularplan {
-  transform: scaleX(1.1) scaleY(1.1);
   border: 4px solid #d4af37;
+  transform: scale(1.07);
 }
 .plan-card-list {
   display: flex;
