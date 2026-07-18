@@ -1,0 +1,13 @@
+.reveal {
+  width: 100%;
+  transition:
+    transform 1s ease,
+    opacity 1s ease;
+}
+.show {
+  opacity: 100;
+  transform: none;
+}
+.hide {
+  opacity: 0;
+}

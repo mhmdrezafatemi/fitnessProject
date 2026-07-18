@@ -47,51 +47,56 @@ export default function PricingCard({ biling, setBiling }) {
       popular: false,
     },
   ];
+  const isMobile = useIsMobile();
   return (
     <>
-      <div className="plan-button">
-        choose your perfect plan:
-        <div className="plan-button-container">
-        <button
-          className={biling === "monthly" ? "active" : ""}
-          onClick={() => setBiling("monthly")}
-        >
-          Monthly
-        </button>
-        <button
-          className={biling === "yearly" ? "active" : ""}
-          onClick={() => setBiling("yearly")}
-        >
-          Yearly
-        </button>
-        </div>
-      </div>
-      <div className="plan-section">
-        {pricing.map((plan) => (
-          <div
-            className={
-              plan.popular === true ? "plan-card popularplan" : "plan-card"
-            }
-            key={plan.id}
-          >
-            <h5 className={plan.popular === true ? "popular" : null}>
-              {plan.title}
-              <strong>
-                {plan.popular === true ? <AsteriskIcon size={30} /> : null}
-              </strong>
-            </h5>
-            <p>Price:{plan.price[biling]}$</p>
-            <ul className="ppp">
-              {plan.features.map((feature) => (
-                <li className="plan-card-list">
-                  <Check size={20} />
-                  {feature}
-                </li>
-              ))}
-            </ul>
+        <div className="plan-button">
+          choose your perfect plan:
+          <div className="plan-button-container">
+            <button
+              className={biling === "monthly" ? "active" : ""}
+              onClick={() => setBiling("monthly")}
+            >
+              Monthly
+            </button>
+            <button
+              className={biling === "yearly" ? "active" : ""}
+              onClick={() => setBiling("yearly")}
+            >
+              Yearly
+            </button>
           </div>
-        ))}
-      </div>
+        </div>
+        <div className="plan-section">
+          {pricing.map((plan,index) => (
+            <div
+              className={
+                plan.popular === true ? "plan-card popularplan" : "plan-card"
+              }
+              key={plan.id}
+            >
+                <Reveal distance='40%' direction={isMobile?'left':'top'} delay={index*800}>
+              <h5 className={plan.popular === true ? "popular" : null}>
+                {plan.title}
+                <strong>
+                  {plan.popular === true ? <AsteriskIcon size={30} /> : null}
+                </strong>
+              </h5>
+              <p>
+                Price:<span className="price">{plan.price[biling]}$</span>
+              </p>
+              <ul>
+                {plan.features.map((feature) => (
+                  <li className="plan-card-list">
+                    <Check size={20} />
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+              </Reveal>
+            </div>
+          ))}
+        </div>
     </>
   );
 }
