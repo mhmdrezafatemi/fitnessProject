@@ -16,23 +16,19 @@ export default function Testimonials() {
     },
   ];
   return (
-    <div className="testimonial-container">
+    <section className="testimonial-container">
       <div className="testimonial-title">
         <h3>What Our Members Say</h3>
         <p>Hear from people who transformed their lives with us.</p>
       </div>
       <div className="testimonial-card">
         <span className="testimonial-arrow">
-          <ArrowLeft />
-          <ArrowRight />
+          <ArrowLeft className="testimonial-arrow-left" />
+          <ArrowRight className="testimonial-arrow-right" />
         </span>
         <div className="star-icon">
           {[...Array(5)].map((_, index) => (
-            <Star
-              fill={index ? "#FFD700" : null}
-              color="white"
-              strokeWidth={1}
-            />
+            <Star fill="#FFD700" color="white" strokeWidth={1} />
           ))}
         </div>
         {members.map((member) => (
@@ -44,6 +40,6 @@ export default function Testimonials() {
         ))}
         <Quote color="white" size={20} strokeWidth={2} className="quote-icon" />
       </div>
-    </div>
+    </section>
   );
 }

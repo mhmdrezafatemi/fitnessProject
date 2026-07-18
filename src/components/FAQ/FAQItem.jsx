@@ -1,7 +1,6 @@
 import { ChevronUp } from "lucide-react";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
-
 import "./FAQ.css";
 export default function FAQItem({ answer, question, isOpen, onToggle }) {
   return (

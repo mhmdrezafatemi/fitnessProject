@@ -24,24 +24,25 @@ export default function WhyChooseUs() {
     },
   ];
   return (
-    <>
-      <div className="choose-us">
-        <strong> WHY CHOOSE US</strong>
-        <h2>Transform Your Body With Expert Coaching </h2>
-        <p>
-          Our certified trainers and personalized workout plans help you achieve
-          sustainable results while building healthy habits that last.
-        </p>
-        <div className="choose-us-section">
-          {cards.map((card) => (
-            <div key={card.id} className="card-box choose-us-section-card">
-              <img src={card.image} />
-              <h3>{card.title}</h3>
-              <p>{card.paragraph}</p>
-            </div>
-          ))}
-        </div>
+    <section className="choose-us">
+      <strong> WHY CHOOSE US</strong>
+      <h2>Transform Your Body With Expert Coaching </h2>
+      <p>
+        Our certified trainers and personalized workout plans help you achieve
+        sustainable results while building healthy habits that last.
+      </p>
+      <div className="choose-us-section">
+        {cards.map((card) => (
+          <div
+            key={card.id}
+            className="chooseus-card-box choose-us-section-card"
+          >
+            <img src={card.image} />
+            <h3>{card.title}</h3>
+            <p>{card.paragraph}</p>
+          </div>
+        ))}
       </div>
-    </>
+    </section>
   );
 }

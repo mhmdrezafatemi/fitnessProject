@@ -1,5 +1,7 @@
 import { AsteriskIcon } from "lucide-react";
 import { Check } from "lucide-react";
+import Reveal from "../Reveal";
+import useIsMobile from "../../hooks/isMobile";
 export default function PricingCard({ biling, setBiling }) {
   const pricing = [
     {

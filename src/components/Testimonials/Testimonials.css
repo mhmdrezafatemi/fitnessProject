@@ -1,14 +1,13 @@
 .quote-icon {
-  color: rgb(200, 15, 15);
   align-self: flex-end;
 }
 .star-icon {
   display: flex;
+  flex-wrap: wrap;
 }
 .testimonial-container {
   padding: 5rem;
   box-sizing: border-box;
-  height: 100vh;
   background: linear-gradient(black, rgba(120, 119, 119, 0.968));
 }
 .testimonial-title {

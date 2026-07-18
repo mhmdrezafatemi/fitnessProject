@@ -10,6 +10,7 @@
 }
 .footer-col1 {
   display: flex;
+  font-size: 1rem;
   flex-direction: column;
   gap: 0.1rem;
 }
@@ -18,27 +19,25 @@
 }
 .footer-social {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   padding-top: 1rem;
 }
 .footer-links {
-  gap: 1.5rem;
-  padding: 2rem 5rem;
+  padding: 2rem 2rem;
   color: black;
   box-sizing: border-box;
   list-style: none;
 }
-.footer-links ul {
-  all: unset;
-}
 .footer-links li {
-  padding: 1rem 2rem;
+  padding: 1rem;
 }
 .footer-links li:hover {
   text-decoration: underline;
 }
 .copyright {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   font-size: 0.8rem;
   gap: 0.4rem;

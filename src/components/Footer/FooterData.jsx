@@ -17,7 +17,7 @@ const resources = [
   { id: 3, title: "Terms of Service", href: "#" },
 ];
 const socials = [
-  { id: 1, icon: <FaTelegram size={40} /> },
+  { id: 1, icon: <FaTelegram size={37} /> },
   { id: 2, icon: <FaInstagram size={40} /> },
   { id: 3, icon: <FaYoutube size={40} /> },
 ];

@@ -7,9 +7,9 @@ import "@fontsource/poppins/600.css";
 
 function App() {
   return (
-    <div className="layout">
+    <>
       <Home />
-    </div>
+    </>
   );
 }
 

@@ -1,8 +1,6 @@
 .program-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 100%;
   align-items: center;
   background-color: black;
   color: white;
@@ -25,7 +23,8 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin: 50px 2rem;
+  padding: var(--dark-p);
+  margin: 3rem 0;
 }
 .program-cards h3 {
   font-weight: 600;
@@ -41,13 +40,13 @@
 }
 .program-cards img {
   transition: transform 0.4s ease-out;
-  will-change: transform;
 }
 .program-cards img:hover {
   transform: scale(1.03);
 }
 .program-link {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 .program-link span {
@@ -70,6 +69,7 @@
 }
 .program-card-box {
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;

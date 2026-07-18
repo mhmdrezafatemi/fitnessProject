@@ -1,5 +1,5 @@
 .faq-container {
-  height: 100vh;
+  height: auto;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@
   padding: 1rem 2rem;
   border: 1px solid gray;
   transform: translateY(3px);
-  transition: transform 0.4 ease;
+  transition: transform 0.4s ease;
 }
 .each-faq p {
   color: var(--dark-p);
@@ -42,8 +42,9 @@
   opacity: 0;
   display: grid;
   grid-template-rows: 0fr;
+  overflow: hidden;
   transition:
-    grid-template-rows 0.8s ease-out,
+    grid-template-rows 0.8s ease-in-out,
     opacity 0.3s ease;
 }
 .answer-self {

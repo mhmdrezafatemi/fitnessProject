@@ -1,7 +1,11 @@
 import running from "../../assets/running.jpg";
 import strengthTraining from "../../assets/strengthTraining.jpg";
 import yoga from "../../assets/yoga.jpg";
+import Reveal from "../Reveal";
+import { useState, useEffect } from "react";
 import "./Program.css";
+import "../../hooks/isMobile";
+import useIsMobile from "../../hooks/isMobile";
 const programs = [
   {
     id: 1,
@@ -25,8 +29,10 @@ const programs = [
   },
 ];
 export default function Program() {
+  const isMobile = useIsMobile();
+  console.log(isMobile);
   return (
-    <div className="program-section background-gradient">
+    <section className="program-section background-gradient">
       <div className="program-title">
         <strong> Our Program</strong>
         <h2>Transform Your Body With Expert Coaching </h2>
@@ -36,20 +42,28 @@ export default function Program() {
         </p>
       </div>
       <div className="program-cards">
-        {programs.map((program) => (
-          <div className="card-box">
-            <div key={program.id} className="image-wrapper">
-              <img src={program.image} />
+        {programs.map((program, index) => (
+          <Reveal
+            distance="50%"
+            direction={isMobile ? "left" : "top"}
+            delay={index * 800}
+          >
+            {  console.log(isMobile)
+}
+            <div className="program-card-box">
+              <div key={program.id} className="image-wrapper">
+                <img src={program.image} />
+              </div>
+              <h3>{program.title}</h3>
+              <p>{program.paragraph}</p>
+              <a className="program-link">
+                Learn More
+                <span>⟶</span>
+              </a>
             </div>
-            <h3>{program.title}</h3>
-            <p>{program.paragraph}</p>
-            <a className="program-link">
-              Learn More
-              <span>⟶</span>
-            </a>
-          </div>
+          </Reveal>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

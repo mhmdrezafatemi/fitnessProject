@@ -1,9 +1,10 @@
 import heropic from "../../assets/heropic.jpg";
 import dropdown from "../../assets/dropdown.svg";
-import { useState } from "react";
-import { GrClose,GrList } from "react-icons/gr";
+import React, { useState } from "react";
+import { GrClose, GrList } from "react-icons/gr";
 import FitlabLogo from "../../assets/fitlab-logo.png";
 import "./Hero.css";
+import Reveal from "../Reveal";
 export default function Hero() {
   const [isopen, setState] = useState(false);
   function setDropdown() {
@@ -20,7 +21,7 @@ export default function Hero() {
         <nav className="nav-box">
           <div className={`${isopen ? "off" : ""} dropdown`}>
             <button onClick={setDropdown} className="buttonstyle-reset">
-              <GrList size={30}/>
+              <GrList size={30} />
             </button>
           </div>
           <div className={`nav-buttons ${isopen ? "open" : "close"}`}>
@@ -34,21 +35,27 @@ export default function Hero() {
             ))}
             <button className="join-button">join now</button>
             <button className="buttonstyle-reset" onClick={setDropdown}>
-              <GrClose className={isopen?'open':'close'} strokeWidth={40} size={30}/>
+              <GrClose
+                className={isopen ? "open" : "close"}
+                strokeWidth={40}
+                size={30}
+              />
             </button>
           </div>
         </nav>
-        <div className="hero-quote">
-          <h2 className="hero-title">Train Smarter. Become Stronger.</h2>
-          <p>
-            fitness is everything if you have motivation,where to get it? you
-            came to the right place
-          </p>
-          <div className="hero-button">
-            <button>Get started</button>
-            <button className="off">Explore Program</button>
+          <div className="hero-quote">
+        <Reveal direction='left' distance='50%'>
+            <h2 className="hero-title">Train Smarter. Become Stronger.</h2>
+            <p>
+              fitness is everything if you have motivation,where to get it? you
+              came to the right place
+            </p>
+            <div className="hero-button">
+              <button>Get started</button>
+              <button className="off">Explore Program</button>
+            </div>
+          </Reveal>
           </div>
-        </div>
       </div>
     </>
   );
