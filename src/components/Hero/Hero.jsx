@@ -24,7 +24,7 @@ export default function Hero() {
               <GrList size={30} />
             </button>
           </div>
-          <div className={`nav-buttons ${isopen ? "open" : "close"}`}>
+          <div className={`nav-buttons ${isopen ? "nav-buttons--open" : "nav-buttons--close"}`}>
             <h1 className="header-logo">
               <img src={FitlabLogo} />
             </h1>

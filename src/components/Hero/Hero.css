@@ -139,11 +139,11 @@
       opacity 0.4s ease-in-out,
       transform 0.7s cubic-bezier(0.44, 0, 0.56, 1);
   }
-  .nav-buttons.open {
+  .nav-buttons--open {
     opacity: 100;
     transform: translateX(0);
   }
-  .nav-buttons.close {
+  .nav-buttons--close {
     opacity: 0;
     transform: translateX(-100%);
   }

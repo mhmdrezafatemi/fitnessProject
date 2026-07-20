@@ -11,7 +11,7 @@ export default function FAQItem({ answer, question, isOpen, onToggle }) {
           className={`chevron-icon ${isOpen ? "faq-close" : "faq-open"}`}
         />
       </button>
-      <div className={`answer ${isOpen ? " open" : ""}`}>
+      <div className={`answer ${isOpen ? " answer--open" : ""}`}>
         <p className="answer-self">{answer}</p>
       </div>
     </div>
