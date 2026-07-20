@@ -10,6 +10,7 @@ import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 export default function Home() {
   return (
     <main>
+      <Hero />
       <WhyChooseUs />
       <Program />
       <Result />
