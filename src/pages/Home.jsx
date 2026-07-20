@@ -9,21 +9,13 @@ import Testimonials from "../components/Testimonials/Testimonials";
 import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 export default function Home() {
   return (
-    <div>
-      <header>
-        <Hero />
-      </header>
-      <main>
-        <WhyChooseUs />
-        <Program/>
-        <Result />
-        <Testimonials />
-        <Pricing />
-        <FAQ />
-      </main>
-      <footer>
-        <Footer />
-        </footer>
-    </div>
+    <main>
+      <WhyChooseUs />
+      <Program />
+      <Result />
+      <Testimonials />
+      <Pricing />
+      <FAQ />
+    </main>
   );
 }
