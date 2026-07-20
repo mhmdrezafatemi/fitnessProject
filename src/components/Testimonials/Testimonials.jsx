@@ -28,15 +28,15 @@ export default function Testimonials() {
         </span>
         <div className="star-icon">
           {[...Array(5)].map((_, index) => (
-            <Star fill="#FFD700" color="white" strokeWidth={1} />
+            <Star fill="#FFD700" color="white" strokeWidth={1} key={index} />
           ))}
         </div>
         {members.map((member) => (
-          <>
+          <div key={member.id}>
             <h5>{member.name}</h5>
             <span>{member.role}</span>
             <p>{member.review}</p>
-          </>
+          </div>
         ))}
         <Quote color="white" size={20} strokeWidth={2} className="quote-icon" />
       </div>

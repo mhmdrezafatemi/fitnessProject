@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="footer-col1">
           <img className="footer-logo" src={FitlabLogo} />
           {numbers.map((number) => (
-            <div className="footer-numbers">
+            <div key={number.id} className="footer-numbers">
               <p>
                 {number.title}:{number.item}
               </p>
@@ -18,7 +18,7 @@ export default function Footer() {
           ))}
           <div className="footer-social">
             {socials.map((social) => (
-              <a className="footer-icon">
+              <a key={social.id} className="footer-icon">
                 <p>{social.icon}</p>
               </a>
             ))}
@@ -27,14 +27,14 @@ export default function Footer() {
         <div className="footer-links">
           <ul>
             {quicklinks.map((quicklink) => (
-              <li>{quicklink.title}</li>
+              <li key={quicklink.id}>{quicklink.title}</li>
             ))}
           </ul>
         </div>
         <div className="footer-links">
           <ul>
             {resources.map((resource) => (
-              <li>{resource.title}</li>
+              <li key={resource.id}>{resource.title}</li>
             ))}
           </ul>
         </div>

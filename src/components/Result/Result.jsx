@@ -16,7 +16,7 @@ export default function Result() {
       </p>
       <div className="result-container">
         {results.map((result) => (
-          <div className="numbers">
+          <div key={result.id} className="numbers">
             <strong className="result-number">{result.number}</strong>
             <strong className="result-text">{result.title}</strong>
           </div>

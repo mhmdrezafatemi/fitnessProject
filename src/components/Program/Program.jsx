@@ -47,11 +47,10 @@ export default function Program() {
             distance="50%"
             direction={isMobile ? "left" : "top"}
             delay={index * 800}
+            key={program.id}
           >
-            {  console.log(isMobile)
-}
             <div className="program-card-box">
-              <div key={program.id} className="image-wrapper">
+              <div className="image-wrapper">
                 <img src={program.image} />
               </div>
               <h3>{program.title}</h3>
