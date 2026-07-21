@@ -1,4 +1,4 @@
-import ProgramHero from "../components/Program/ProgramHero";
+import ProgramHero from "../components/Program/Program/ProgramHero/ProgramHero";
 
 export default function Program(){
     return(
