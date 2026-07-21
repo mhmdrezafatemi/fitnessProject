@@ -1,10 +1,10 @@
-import heropic from "../../assets/heropic.jpg";
-import dropdown from "../../assets/dropdown.svg";
+import heropic from "../../../assets/heropic.jpg";
+import dropdown from "../../../assets/dropdown.svg";
 import React, { useState } from "react";
 import { GrClose, GrList } from "react-icons/gr";
-import FitlabLogo from "../../assets/fitlab-logo.png";
+import FitlabLogo from "../../../assets/fitlab-logo.png";
 import "./Hero.css";
-import Reveal from "../Reveal";
+import Reveal from "../../Reveal";
 export default function Hero() {
   return (
     <>

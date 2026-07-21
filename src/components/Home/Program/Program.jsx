@@ -1,11 +1,11 @@
-import running from "../../assets/running.jpg";
-import strengthTraining from "../../assets/strengthTraining.jpg";
-import yoga from "../../assets/yoga.jpg";
-import Reveal from "../Reveal";
+import running from "../../../assets/running.jpg";
+import strengthTraining from "../../../assets/strengthTraining.jpg";
+import yoga from "../../../assets/yoga.jpg";
+import Reveal from "../../Reveal";
 import { useState, useEffect } from "react";
 import "./Program.css";
-import "../../hooks/isMobile";
-import useIsMobile from "../../hooks/isMobile";
+import "../../../hooks/isMobile";
+import useIsMobile from "../../../hooks/isMobile";
 const programs = [
   {
     id: 1,

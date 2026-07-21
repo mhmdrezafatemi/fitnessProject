@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
-import Hero from "../components/Hero/Hero";
-import Footer from "../components/Footer/Footer";
-import Navbar from "../components/Navbar/Navbar";
+import Hero from "../components/Home/Hero/Hero";
+import Footer from "../components/Shared/Footer/Footer";
+import Navbar from "../components/Shared/Navbar/Navbar";
 
 export default function MainLayout() {
   return (

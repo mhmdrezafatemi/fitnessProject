@@ -1,6 +1,6 @@
-import strength from "../../assets/strength.svg";
-import community from "../../assets/community.svg";
-import nutrition from "../../assets/nutrition.svg";
+import strength from "../../../assets/strength.svg";
+import community from "../../../assets/community.svg";
+import nutrition from "../../../assets/nutrition.svg";
 import "./WhyChooseUs.css";
 export default function WhyChooseUs() {
   const cards = [

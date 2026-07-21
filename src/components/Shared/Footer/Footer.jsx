@@ -1,6 +1,6 @@
 import { numbers, quicklinks, resources, socials } from "./FooterData";
 import "./Footer.css";
-import FitlabLogo from "../../assets/fitlab-logo.png";
+import FitlabLogo from "../../../assets/fitlab-logo.png";
 import { Copy, Copyright } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 export default function Footer() {

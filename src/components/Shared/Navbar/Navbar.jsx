@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { GrClose, GrList } from "react-icons/gr";
-import FitlabLogo from "../../assets/fitlab-logo.png";
+import FitlabLogo from "../../../assets/fitlab-logo.png";
 import "./Navbar.css";
-import Reveal from "../Reveal";
+import Reveal from "../../Reveal";
 import { NavLink } from "react-router";
 import { useLocation } from "react-router";
 
@@ -16,7 +16,7 @@ export default function Navbar() {
   useEffect(() => {
     setIsOpen(false);
   }, [location]);
-  
+
   const navButton = [
     { id: 1, title: "Home", link: "" },
     { id: 2, title: "Programs", link: "program" },
