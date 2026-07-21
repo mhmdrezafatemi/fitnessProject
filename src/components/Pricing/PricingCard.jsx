@@ -54,13 +54,13 @@ export default function PricingCard({ biling, setBiling }) {
         choose your perfect plan:
         <div className="plan-button-container">
           <button
-            className={biling === "monthly" ? "active" : ""}
+            className={biling === "monthly" ? "active-plan" : ""}
             onClick={() => setBiling("monthly")}
           >
             Monthly
           </button>
           <button
-            className={biling === "yearly" ? "active" : ""}
+            className={biling === "yearly" ? "active-plan" : ""}
             onClick={() => setBiling("yearly")}
           >
             Yearly

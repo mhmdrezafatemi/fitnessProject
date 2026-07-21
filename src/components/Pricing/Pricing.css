@@ -63,7 +63,7 @@
   width: 100px;
   border: none;
 }
-.active {
+.active-plan {
   box-shadow: inset -40px -10px 20px 5px rgba(255, 255, 255, 0.614);
 }
 .price {

@@ -1,18 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { GrClose, GrList } from "react-icons/gr";
 import FitlabLogo from "../../assets/fitlab-logo.png";
 import "./Navbar.css";
 import Reveal from "../Reveal";
+import { NavLink } from "react-router";
+import { useLocation } from "react-router";
 
 export default function Navbar() {
-  const [isopen, setState] = useState(false);
+  const [isopen, setIsOpen] = useState(false);
   function setDropdown() {
-    setState(!isopen);
+    setIsOpen(!isopen);
   }
+
+  const location = useLocation();
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
+  
   const navButton = [
-    { id: 1, title: "Article", href: "/" },
-    { id: 2, title: "program", href: "/" },
-    { id: 3, title: "more", href: "/" },
+    { id: 1, title: "Home", link: "" },
+    { id: 2, title: "Programs", link: "program" },
+    { id: 3, title: "Trainers", link: "trainers" },
+    { id: 4, title: "Pricing", link: "pricing" },
+    { id: 4, title: "Contact", link: "contact" },
   ];
   return (
     <nav className="nav-box">
@@ -28,9 +38,9 @@ export default function Navbar() {
           <img src={FitlabLogo} />
         </h1>
         {navButton.map((button) => (
-          <a className="nav" key={button.id} href={button.href}>
+          <NavLink className="nav" key={button.id} to={button.link}>
             {button.title}
-          </a>
+          </NavLink>
         ))}
         <button className="join-button">join now</button>
         <button className="buttonstyle-reset" onClick={setDropdown}>
