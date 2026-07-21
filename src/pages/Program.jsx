@@ -1,5 +1,9 @@
+import ProgramHero from "../components/Program/ProgramHero";
+
 export default function Program(){
     return(
-        <h1></h1>
+        <>
+        <ProgramHero/>
+        </>
     )
 }
