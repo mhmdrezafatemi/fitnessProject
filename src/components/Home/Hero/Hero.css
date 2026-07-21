@@ -38,7 +38,7 @@
   padding: 2rem 0;
 }
 .hero-button button {
-  border-radius: 20px;
+  border-radius: var(--button-radius);
   padding: 0 1rem;
   border: none;
 }

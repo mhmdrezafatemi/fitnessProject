@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="hero-img">
         <div className="hero-quote">
           <Reveal direction="left" distance="50%">
-            <h2 className="hero-title">Train Smarter. Become Stronger.</h2>
+            <h1 className="hero-title">Train Smarter. Become Stronger.</h1>
             <p>
               fitness is everything if you have motivation,where to get it? you
               came to the right place

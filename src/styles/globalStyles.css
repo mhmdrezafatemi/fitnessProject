@@ -16,6 +16,8 @@
   --dark-p: rgb(162, 159, 159);
 
   --box-padding: 0 2rem;
+
+  --button-radius: 20px;
 }
 * {
   font-family: "poppins";

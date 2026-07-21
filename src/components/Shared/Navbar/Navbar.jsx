@@ -34,9 +34,9 @@ export default function Navbar() {
       <div
         className={`nav-buttons ${isopen ? "nav-buttons--open" : "nav-buttons--close"}`}
       >
-        <h1 className="header-logo">
+        <span className="header-logo">
           <img src={FitlabLogo} />
-        </h1>
+        </span>
         {navButton.map((button) => (
           <NavLink className="nav" key={button.id} to={button.link}>
             {button.title}
