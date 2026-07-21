@@ -1,0 +1,35 @@
+.category-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  align-items: center;
+  gap: 3rem;
+  background-color: white;
+  color: black;
+}
+.category-card-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  width: 80%;
+  padding: 1rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.category-card {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  flex-direction: column;
+  height: auto;
+  text-align: center;
+}
+.category-card img {
+  width: 5rem;
+  padding-bottom: 1rem;
+}
+.category-card h2 {
+  font-size: 1.2rem;
+}

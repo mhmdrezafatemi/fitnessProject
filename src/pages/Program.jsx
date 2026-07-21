@@ -1,9 +1,11 @@
-import ProgramHero from "../components/Program/Program/ProgramHero/ProgramHero";
 
+import ProgramCategory from "../components/Program/ProgramCategory/ProgramCategory";
+import ProgramHero from "../components/Program/ProgramHero/ProgramHero";
 export default function Program(){
     return(
         <>
         <ProgramHero/>
+        <ProgramCategory/>
         </>
     )
 }
