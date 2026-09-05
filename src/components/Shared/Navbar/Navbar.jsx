@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { GrClose, GrList } from "react-icons/gr";
+import { X, Menu } from "lucide-react";
 import FitlabLogo from "../../../assets/fitlab-logo.png";
 import "./Navbar.css";
 import Reveal from "../../Reveal";
@@ -28,7 +28,7 @@ export default function Navbar() {
     <nav className="nav-box">
       <div className={`${isopen ? "off" : ""} dropdown`}>
         <button onClick={setDropdown} className="buttonstyle-reset">
-          <GrList size={30} />
+          <Menu size={30} />
         </button>
       </div>
       <div
@@ -44,7 +44,7 @@ export default function Navbar() {
         ))}
         <button className="join-button">join now</button>
         <button className="buttonstyle-reset" onClick={setDropdown}>
-          <GrClose
+          <X
             className={`${isopen ? "nav-buttons--open" : "nav-buttons--close"} close-button`}
             strokeWidth={40}
             size={30}
